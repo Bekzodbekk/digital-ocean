@@ -1,0 +1,54 @@
+@import "../../../style/_variables";
+
+.footer{
+    width: 100%;
+    margin: 50px 0;
+    .footerContent{
+        .items{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            .item{
+                h1{
+                    @include font(25px, 500, #000);
+                }
+                ul{
+                    list-style-type: none;
+                    li{
+                        margin: 15px 0;
+                        a{
+                            @include font(20px, 400, $p);
+                            text-decoration: none;
+
+                            &:hover{
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 995px){
+    .footer{
+        .footerContent{
+            .items{
+                grid-template-columns: repeat(2, 1fr);
+                .item{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 549px){
+    .footer{
+        .footerContent{
+            .items{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}

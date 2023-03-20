@@ -1,0 +1,55 @@
+@import "../../../style/_variables";
+
+.subscribeContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 350px;
+    background: rgba(232, 236, 255, 0.3);
+    .subscribeContent{
+        h1{
+            @include font(30px, 500, $blue);
+        }
+        h3{
+            @include font(20px, 500, #000);
+            margin: 20px 0;
+        }
+        .subsinput{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid #058aff50;
+            width: 400px;
+            height: 80px;
+            border-radius: 10px;
+
+            i{
+                font-size: 25px
+            }
+            input{
+                @include font(20px, 400, $blue);
+                outline: none;
+                height: 100%;
+                width: 190px;
+                border: none;
+            }
+            .btn{
+                @include btn(15px, 20px, $blue, #fff)
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 423px){
+    .subscribeContainer{
+        .subscribeContent{
+            .subsinput{
+                width: 350px;
+                i{
+                    display: none;
+                }
+            }
+        }
+    }
+}

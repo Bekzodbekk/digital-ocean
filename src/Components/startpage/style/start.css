@@ -1,0 +1,61 @@
+.startContainer {
+  margin-top: 100px;
+}
+.startContainer .startContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.startContainer .startContent .startText {
+  width: 530px;
+}
+.startContainer .startContent .startText h1 {
+  margin: 15px 0;
+}
+.startContainer .startContent .startText h1 span {
+  color: #0082F4;
+}
+.startContainer .startContent .startText .startBtns {
+  display: flex;
+  margin-top: 30px;
+}
+.startContainer .startContent .startText .startBtns .background {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 20px 46px;
+  background: #0082F4;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-right: 30px;
+}
+.startContainer .startContent .startText .startBtns .noBackground {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 20px 46px;
+  background: none;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.0941176471);
+}
+.startContainer .startContent .startText .startBtns .noBackground img {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1123px) {
+  .startContainer .startContent .team {
+    display: none;
+  }
+}
+@media only screen and (max-width: 565px) {
+  .startContainer .startContent .startText .startBtns {
+    flex-direction: column;
+  }
+  .startContainer .startContent .startText .startBtns .background {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=start.css.map */

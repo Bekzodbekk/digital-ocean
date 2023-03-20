@@ -1,0 +1,99 @@
+@import "../../../style/_variables";
+
+.navbarContainer {
+    width: 100%;
+
+    .navbarContent {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $border;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-right: 40px;
+                list-style-type: none;
+
+                a {
+                    @include font(20px, 400, #000);
+                    position: relative;
+                    text-decoration: none;
+
+                    &.active {
+                        color: $blue;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 61px;
+                            height: 1px;
+                            width: 100%;
+                            border-radius: 10px;
+                            background: $blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navBtn {
+            @include btn(14px, 30px, $blue, #fff)
+        }
+
+        .bar {
+            display: none;
+            i{
+                font-size: 25px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbarContainer {
+        .navbarContent {
+            ul {
+                transition: 0.2s linear;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                justify-content: center;
+                position: absolute;
+                top: 110px;
+                left: 3%;
+                background: rgb(181, 193, 255);
+                width: 93%;
+                height: 0px;
+                overflow: hidden;
+
+                li {
+                    margin: 20px 0;
+
+                    a {
+                        font-size: 35px;
+                    }
+                }
+            }
+            .bar{
+                display: inline;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 411px){
+    .navbarContainer{
+        .navbarContent{
+            .navBtn{
+                display: none;
+            }
+        }
+    }
+}

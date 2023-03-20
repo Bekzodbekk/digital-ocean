@@ -1,0 +1,54 @@
+@import "../../../style/_variables";
+
+.workContainer{
+    margin: 100px 0;
+    .workContent{
+        text-align: center;
+        .head{
+            font-weight: 500;
+        }
+
+        .workitems{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .workItem{
+                width: 345px;
+                &:nth-child(2){
+                    margin: 0 10px;
+                }
+                img{
+                    margin: 60px 0;
+                }
+                .itemText{
+                    h1{
+                        font-size: 28px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 883px){
+    .workContainer{
+        .workContent{
+            .workitems{
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 451px){
+    .workContainer{
+        .workContent{
+            .workitems{
+                .workItem{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

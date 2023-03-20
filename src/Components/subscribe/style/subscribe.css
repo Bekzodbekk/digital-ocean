@@ -1,0 +1,58 @@
+.subscribeContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 350px;
+  background: rgba(232, 236, 255, 0.3);
+}
+.subscribeContainer .subscribeContent h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #0082F4;
+}
+.subscribeContainer .subscribeContent h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin: 20px 0;
+}
+.subscribeContainer .subscribeContent .subsinput {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgba(5, 138, 255, 0.3137254902);
+  width: 400px;
+  height: 80px;
+  border-radius: 10px;
+}
+.subscribeContainer .subscribeContent .subsinput i {
+  font-size: 25px;
+}
+.subscribeContainer .subscribeContent .subsinput input {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0082F4;
+  outline: none;
+  height: 100%;
+  width: 190px;
+  border: none;
+}
+.subscribeContainer .subscribeContent .subsinput .btn {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 20px;
+  background: #0082F4;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 423px) {
+  .subscribeContainer .subscribeContent .subsinput {
+    width: 350px;
+  }
+  .subscribeContainer .subscribeContent .subsinput i {
+    display: none;
+  }
+}/*# sourceMappingURL=subscribe.css.map */

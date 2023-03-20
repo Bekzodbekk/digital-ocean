@@ -1,0 +1,38 @@
+.workContainer {
+  margin: 100px 0;
+}
+.workContainer .workContent {
+  text-align: center;
+}
+.workContainer .workContent .head {
+  font-weight: 500;
+}
+.workContainer .workContent .workitems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.workContainer .workContent .workitems .workItem {
+  width: 345px;
+}
+.workContainer .workContent .workitems .workItem:nth-child(2) {
+  margin: 0 10px;
+}
+.workContainer .workContent .workitems .workItem img {
+  margin: 60px 0;
+}
+.workContainer .workContent .workitems .workItem .itemText h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 883px) {
+  .workContainer .workContent .workitems {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 451px) {
+  .workContainer .workContent .workitems .workItem {
+    width: 300px;
+  }
+}/*# sourceMappingURL=wework.css.map */

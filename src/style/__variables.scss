@@ -1,0 +1,19 @@
+
+$blue: #0082F4;
+$border: #00000018;
+$p: #0000007a;
+
+@mixin font($size, $weight, $color){
+    font: {
+        size: $size;
+        weight: $weight
+    };
+    color: $color;
+}
+@mixin btn($padY, $padX, $background, $color){
+    @include font(20px, 500, $color); 
+    padding: $padY $padX;
+    background: $background;
+    text-decoration: none;
+    border-radius: 6px
+};

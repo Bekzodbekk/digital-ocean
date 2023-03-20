@@ -1,0 +1,44 @@
+@import "../../../style/_variables";
+
+.communityContainer{
+    margin-top: 100px;
+    .comContent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .communityText{
+            width: 620px;
+            p{
+                margin: 20px 0;
+            }
+            .combtn{
+                margin-top: 60px;
+                a{
+                    @include btn(20px, 40px, $blue, #fff);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1591px){
+    .communityContainer{
+        .comContent{
+            .communityText{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1239px){
+    .communityContainer{
+        .comContent{
+            .communityText{
+                margin: 0;
+            }
+            .communityimg{
+                display: none;
+            }
+        }
+    }
+}

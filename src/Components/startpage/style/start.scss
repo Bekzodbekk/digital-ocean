@@ -1,0 +1,63 @@
+@import "../../../style/_variables";
+
+.startContainer{
+    margin-top: 100px;
+    .startContent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .startText{
+            width: 530px;
+            h1{
+                margin: 15px 0;
+                span{
+                    color: $blue;
+                }
+            }
+
+            .startBtns{
+                display: flex;
+                margin-top: 30px;
+                .background{
+                    @include btn(20px, 46px, $blue, #fff);
+                    margin-right: 30px;
+                }
+                .noBackground{
+                    display: flex;
+                    align-items: center;
+                    @include btn(20px, 46px, none, #000);
+                    border: 1px solid $border;
+
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1123px){
+    .startContainer{
+        .startContent{
+            .team{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 565px){
+    .startContainer{
+        .startContent{
+            .startText{
+                .startBtns{
+                    flex-direction: column;
+                    .background{
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.communityContainer {
+  margin-top: 100px;
+}
+.communityContainer .comContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.communityContainer .comContent .communityText {
+  width: 620px;
+}
+.communityContainer .comContent .communityText p {
+  margin: 20px 0;
+}
+.communityContainer .comContent .communityText .combtn {
+  margin-top: 60px;
+}
+.communityContainer .comContent .communityText .combtn a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 20px 40px;
+  background: #0082F4;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 1591px) {
+  .communityContainer .comContent .communityText {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 1239px) {
+  .communityContainer .comContent .communityText {
+    margin: 0;
+  }
+  .communityContainer .comContent .communityimg {
+    display: none;
+  }
+}/*# sourceMappingURL=community.css.map */
